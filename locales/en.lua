@@ -1,0 +1,22 @@
+Locales['en'] = {
+    ['medic_options'] = 'Medic options',
+    ['no_nearby_players'] = 'No players nearby',
+    ['medic_menu'] = 'Medic menu',
+    ['select_option'] = 'Select option',
+    ['horse_options'] = 'Horse options',
+    ['revive_player'] = 'Revive player',
+    ['revive_in_prog'] = 'Revive in progress',
+    ['heal_player'] = 'Heal player',
+    ['heal_in_prog'] = 'Heal in progress...',
+    ['player_not_unconscious'] = 'Player not unconscious',
+    ['do_not_have'] = 'You dont have %s',
+    ['spawn_horse'] = 'Spawn horse',
+    ['take_items'] = 'Take medic utilities',
+    ['you_full'] = 'You already have supplies in inventory',
+    ['you_take'] = 'You have taken supplies',
+    ['change_clothes'] = 'Change clothes',
+    ['doctor_male'] = 'Male doctor',
+    ['doctor_famale'] = 'Female doctor',
+    ['syringe'] = 'Syringe',
+    ['bandage'] = 'Bandage'
+}
