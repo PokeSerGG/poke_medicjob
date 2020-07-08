@@ -38,13 +38,6 @@ end)
 RegisterServerEvent('poke_medic:takeItems')
 AddEventHandler('poke_medic:takeItems', function()
     local _source = source
-    local count = Inventory.getItemCount(_source, "bandage")
-    local count2 = Inventory.getItemCount(_source, "syringe")
-    if count >= 5 and count2 >= 5 then
-        TriggerClientEvent("vorp:TipRight", _source, _U('you_full'), 3000)
-    else
-        Inventory.addItem(_source, "bandage", 5)
-        Inventory.addItem(_source, "syringe", 5)
-        TriggerClientEvent("vorp:TipRight", _source, _U('you_take'), 3000)
-    end
+    Inventory.addItem(_source, "bandage", Config.giveItemCount)
+    Inventory.addItem(_source, "syringe", Config.giveItemCount)
 end)
