@@ -1,6 +1,8 @@
 Locales['es'] = {
+    ['map_blip'] = 'Doctor',
     ['medic_options'] = 'Opciones médicas',
     ['no_nearby_players'] = 'No hay jugadores cerca',
+    ['press_to'] = 'Pulsa [ESPACIO] para acceder al armario médico',
     ['medic_menu'] = 'Menú médico',
     ['select_option'] = 'Selecciona una opción',
     ['horse_options'] = 'Opciones de caballo',
@@ -15,6 +17,7 @@ Locales['es'] = {
     ['you_full'] = 'Ya tienes suministros en el inventario',
     ['you_take'] = 'Has cogido suministros',
     ['change_clothes'] = 'Cambiar ropa',
+    ['civil_clothes'] = 'Ropa de civil',
     ['doctor_male'] = 'Doctor',
     ['doctor_female'] = 'Doctora',
     ['syringe'] = 'Jeringuillas',

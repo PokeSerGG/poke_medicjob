@@ -1,6 +1,8 @@
 Locales['en'] = {
+    ['map_blip'] = 'Doctor',
     ['medic_options'] = 'Medic options',
     ['no_nearby_players'] = 'No players nearby',
+    ['press_to'] = 'Press [SPACE] to access the medical cabinet',
     ['medic_menu'] = 'Medic menu',
     ['select_option'] = 'Select option',
     ['horse_options'] = 'Horse options',
@@ -15,8 +17,9 @@ Locales['en'] = {
     ['you_full'] = 'You already have supplies in inventory',
     ['you_take'] = 'You have taken supplies',
     ['change_clothes'] = 'Change clothes',
+    ['civil_clothes'] = 'Civil clothes',
     ['doctor_male'] = 'Male doctor',
-    ['doctor_famale'] = 'Female doctor',
+    ['doctor_female'] = 'Female doctor',
     ['syringe'] = 'Syringe',
     ['bandage'] = 'Bandage'
 }

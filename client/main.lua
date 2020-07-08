@@ -14,7 +14,7 @@ Citizen.CreateThread(function()
         for k,v in pairs(Config.MedicLocations) do
             local distance = GetDistanceBetweenCoords(v.x, v.y, v.z, pos.x, pos.y, pos.z, false)
             if distance <= 1.5 then
-                DrawTxt("Pulsa [ESPACIO] para acceder al armario médico", 0.3, 0.95, 0.4, 0.4, true, 255, 255, 255, 255, false)
+                DrawTxt(_U('press_to'), 0.3, 0.95, 0.4, 0.4, true, 255, 255, 255, 255, false)
                 if IsControlJustReleased(0, 0xD9D0E1C0) then
                     TriggerServerEvent('poke_medic:getjob', 'medic_house')
                 end
@@ -58,7 +58,7 @@ Citizen.CreateThread(function()
             end
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('clothes_options') then
-            if WarMenu.Button('Ropa de civil') then
+            if WarMenu.Button(_U('civil_clothes')) then
                 TriggerServerEvent("vorpcharacter:getPlayerSkin")
             elseif WarMenu.Button(_U('doctor_male')) then
                 ChangeClothes(GetHashKey("CS_SDDoctor_01"))
@@ -109,6 +109,6 @@ Citizen.CreateThread(function()
     for k,v in pairs(Config.MedicLocations) do
         local blip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, v.x, v.y, v.z)
         SetBlipSprite(blip, -695368421, 1)
-        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Doctor")
+        Citizen.InvokeNative(0x9CB1A1623062F402, blip, _U('map_blip'))
     end
 end)
