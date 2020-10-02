@@ -1,14 +1,19 @@
 Inventory = exports.vorp_inventory:vorp_inventoryApi()
+VorpCore = {}
+
+TriggerEvent("getCore",function(core)
+    VorpCore = core
+end)
 
 RegisterServerEvent('poke_medic:getjob')
 AddEventHandler('poke_medic:getjob', function(type)
     local _source = source
-    TriggerEvent("vorp:getCharacter", _source, function(user)
-        local job = user.job
-        if job == 'medic' then
-            TriggerClientEvent('poke_medic:auth', _source, type)
-        end
-    end)
+    local User = VorpCore.getUser(source)
+    local Character = User.getUsedCharacter
+    local job = Character.job
+    if job == 'medic' then
+        TriggerClientEvent('poke_medic:auth', _source, type)
+    end
 end)
 
 RegisterServerEvent('poke_medic:revivePlayer')
